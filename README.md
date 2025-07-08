@@ -9,6 +9,12 @@ A simple front-end application for managing gym membership interactions, built w
 └── script.js # Front-end logic and interactions
 
 
+## 🔗 Live Demo
+
+Check out the live demo here: [Gym Membership App Live](https://lazomafija.github.io/gymmembershipapp/)
+
+
+
 
 ## ✨ Features
 
