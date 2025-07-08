@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife Gym Membership</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Remixicon for icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">FitLife<span>Gym</span></div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+            <li><a href="#form-section">Join</a></li>
+        </ul>
+    </nav>
+    <header id="home">
+        <div class="hero-content">
+            <h1>Unleash <span>Your Power</span></h1>
+            <p>Welcome to <b>FitLife Gym</b> — where your fitness story begins! Modern facilities, expert trainers, and a vibrant community await.</p>
+            <a href="#form-section" class="cta-btn">Join FitLife Now <i class="ri-arrow-right-line"></i></a>
+        </div>
+    </header>
+    <section id="benefits">
+        <h2>Why Choose <span>FitLife?</span></h2>
+        <div class="benefits-list">
+            <div class="card benefit-card">
+                <i class="ri-barbell-line"></i>
+                <h3>Modern Equipment</h3>
+                <p>Latest machines, free weights, and smart cardio.</p>
+            </div>
+            <div class="card benefit-card">
+                <i class="ri-user-star-line"></i>
+                <h3>Expert Trainers</h3>
+                <p>Certified professionals to guide you at every step.</p>
+            </div>
+            <div class="card benefit-card">
+                <i class="ri-heart-pulse-line"></i>
+                <h3>Personalized Plans</h3>
+                <p>Custom workouts and nutrition for your goals.</p>
+            </div>
+            <div class="card benefit-card">
+                <i class="ri-team-line"></i>
+                <h3>Community Events</h3>
+                <p>Join group classes & challenges for extra motivation.</p>
+            </div>
+        </div>
+    </section>
+    <section id="form-section">
+        <h2>Membership <span>Application</span></h2>
+        <form id="membershipForm" class="card form-card">
+            <div class="form-group">
+                <label for="fullName"><i class="ri-user-line"></i> Full Name</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div class="form-group">
+                <label for="email"><i class="ri-mail-line"></i> Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone"><i class="ri-phone-line"></i> Phone Number</label>
+                <input type="tel" id="phone" name="phone" required pattern="^\d{10,15}$">
+            </div>
+            <div class="form-group">
+                <label for="membership"><i class="ri-medal-line"></i> Membership Plan</label>
+                <select id="membership" name="membership" required>
+                    <option value="">Select a plan</option>
+                    <option value="monthly">Monthly - $49</option>
+                    <option value="quarterly">Quarterly - $129</option>
+                    <option value="yearly">Yearly - $499</option>
+                </select>
+            </div>
+            <button type="submit" class="cta-btn form-submit-btn">Apply for Membership</button>
+        </form>
+        <div id="formMessage"></div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <button class="footer-btn">Contact Us</button>
+            <div class="footer-text">
+                &copy; 2025 FitLife Gym. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
